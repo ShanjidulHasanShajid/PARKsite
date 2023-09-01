@@ -83,7 +83,7 @@
                 }
             ?>
             <div class="manual">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quas numquam ipsam tenetur modi, assumenda tempora itaque velit, pariatur aspernatur temporibus? Quisquam, provident. Itaque, voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, deleniti! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero aperiam recusandae saepe omnis quaerat dignissimos numquam inventore quibusdam dolorum, possimus nostrum nihil tenetur autem dicta illo? Quod quis error hic?</p>
+              <p>This chart displays user percentages on the platform and offers access to unresolved responses in the "Contact Us" section. It provides a quick snapshot of user demographics or engagement levels for strategic insights. The "Contact Us" feature aids in addressing unresolved user inquiries promptly, ensuring effective customer support. This data-driven approach enhances user satisfaction by streamlining issue resolution and informing decisions based on user demographics.</p>
             </div>
           </div>
         <div class="right">
@@ -93,7 +93,7 @@
                 <?php
                     echo '<h5>' . $count . '</h5>';
                 ?>
-                <a href="adminResolve.html"><button class="btn3">Resolve</button></a>
+                <a href="adminResolve.php"><button class="btn3">Resolve</button></a>
             </div>
             <div class="cardX">
                 <img src="images/gmail.png">
