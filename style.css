@@ -1,0 +1,62 @@
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+}
+
+.account{
+    color: black;
+}
+
+.account:link{
+    color: black;
+}
+
+.account:visited{
+    color: black;
+}
+
+.account:hover{
+    color: #8bc052;
+}
+
+.btn1{
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 90px;
+    height: 40px;
+    
+}
+
+.btn1:hover{
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+
+}
+
+.btn2{
+    width: 70px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 10px;
+    
+}
+
+.btn2:hover{
+    background-color: #8bc052;
+}

@@ -1,0 +1,265 @@
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+}
+
+.account{
+    color: black;
+}
+
+.account:link{
+    color: black;
+}
+
+.account:visited{
+    color: black;
+}
+
+.account:hover{
+    color: #8bc052;
+}
+
+.btn1{
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+    
+}
+
+.btn1:hover{
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+
+}
+
+.btn2{
+    width: 80px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 10px;
+    
+}
+.btn2:hover{
+    background-color: #9ed368;
+}
+.btn-red{
+    background-color: #F95252;
+    border-color: #F95252;
+}
+.btn-red:hover{
+    background-color: #F95252;
+    border-color: #F95252;
+}
+
+main{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 80px;
+    display: flex;
+    width: 99vw;
+    height: max-content;
+}
+
+.sidebar{
+    width: 25vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 3px solid #8bc052;
+}
+
+.sidebtn{
+    width: 18vw;
+    height: 15vh;
+    background-color: #9ed368;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.sidebtn img{
+    width: 60px;
+}
+
+.sidebtn:hover{
+    background-color: #8bc052;
+}
+
+.content{
+    width: 74vw;
+}
+.innercont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+.innercont h1{
+    margin-bottom: 20px;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+.outer-wrapper {
+    padding: 30px;
+    border-radius: 5px;
+    width: 70vw;
+    height: 600px;
+}
+.table-wrapper {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: fit-content;
+    max-height: 500px;
+    margin-top: 22px;
+    margin: 15px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.table-wrapper::-webkit-scrollbar {
+    width: 0rem; /* Adjust the scrollbar width */
+  }
+  
+  .table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+  }
+  
+  .table-wrapper::-webkit-scrollbar-track {
+    background-color:transparent; /* Background color of the scrollbar track */
+  }
+
+table {
+    border-spacing: 0px;
+}
+
+table th {
+    position: sticky;
+    top: 0px;
+    width: 60vw;
+    background-color: #9ed368;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+table th,
+table td {
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+table tr:nth-child(2n + 0) {
+    background-color: rgb(250, 250, 231);
+}
+table tr:nth-child(2n + 1) {
+    background-color: rgb(255, 255, 255);
+}
+
+tr {
+    height: 62px;
+}
+table td {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+
+@media  (max-width:600px) {
+    main{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100vw;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+    .sidebtn{
+        margin-top: 10px;
+        width: 40vw;
+        height: 10vh;
+        
+        font-size: 1rem;
+        
+    }
+    .sidebtn img{
+        width: 10vw;
+    }
+    .innercont{
+        margin-top: 40px;
+        width: 100vw;
+    }
+    .innercont h1{
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 352px) and (max-width: 650px) {
+    .outer-wrapper {
+        padding: 30px;
+        border-radius: 5px;
+        width: 100vw;
+        height: 600px;
+    }
+    table th {
+        font-size: 1.1rem;
+    }
+    table td {
+        font-size: 1rem;
+    }
+    tr {
+        height: 42px;
+    }
+}
+
+

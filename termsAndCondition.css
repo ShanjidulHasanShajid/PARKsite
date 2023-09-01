@@ -1,0 +1,115 @@
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    color: black;
+}
+
+.account:link {
+    color: black;
+}
+
+.account:visited {
+    color: black;
+}
+
+.account:hover {
+    color: #8bc052;
+}
+
+.btn1 {
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 90px;
+    height: 40px;
+}
+
+.btn1:hover {
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+}
+
+.btn2 {
+    width: 70px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.btn2:hover {
+    background-color: #8bc052;
+}
+
+main {
+    margin-top: 85px;
+    width: 100vw;
+    height: 6000xp;
+}
+
+.banner {
+    height: 20vh;
+    width: 100%;
+    background-color: #8bc052;
+    display: flex;
+    align-items: center;
+    background-image: url(images/faq-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner h1 {
+    color: white;
+    padding-left: 10vw;
+}
+
+.termsAndCOnds {
+    padding: 90px;
+}
+
+.termsAndCOnds p {
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+    .termsAndCOnds {
+        padding: 20px;
+    }
+
+    .termsAndCOnds p {
+        margin-left: 25px;
+        font-size: 15px;
+    }
+}

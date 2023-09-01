@@ -1,0 +1,147 @@
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    color: black;
+}
+
+.account:link {
+    color: black;
+}
+
+.account:visited {
+    color: black;
+}
+
+.account:hover {
+    color: #8bc052;
+}
+
+.btn1 {
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 90px;
+    height: 40px;
+
+}
+
+.btn1:hover {
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+
+}
+
+.btn2 {
+    width: 70px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 10px;
+
+}
+
+.btn2:hover {
+    background-color: #8bc052;
+}
+
+main {
+    margin-top: 80px;
+    width: 99vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reader {
+    width: 350px;
+    border: none;
+}
+
+.result {
+    background-color: green;
+    color: #fff;
+    padding: 20px;
+}
+
+.rowX {
+    display: flex;
+}
+
+#reader__scan_region {
+    background: white;
+}
+
+.colX{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardX{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 80%;
+    background-color: #9ed368;
+    border-radius: 25px;
+}
+
+#reader button{
+    margin-left: -10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #8bc052;
+}
+
+#reader button:hover{
+    background-color: #8bc052;
+}
+
+@media screen and (max-width: 1400px){
+    .cardX{
+        flex-direction: column;
+        width: 50%;
+        height: 90%;
+    }
+    .rowX{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .cardX{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .cardX{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .cardX{
+        width: 100%;
+    }
+}

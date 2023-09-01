@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="superviseQR.css" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Scan QR Code</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img class="imglogo" src="images/logo.png" alt="" width="60"
+                        class="d-inline-block align-text-top" />
+                    PARKsite</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbtn navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="account.html" class="nav-link account">Preetar Parker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="processing.html"></a><button class="btn2">Join Garage</button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="home.html"></a><button class="btn1">Logout</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="start">
+                <h1>Garage Details:</h1>
+                <div class="time">
+                    <img src="images/address.png">
+                    <h5 class="timeh5">Address:</h5>
+                </div>
+                <p>19 Tajmahal Road, Mohammadpur, Dhaka-1207</p>
+                <div class="time">
+                    <img src="images/start.png">
+                    <h5 class="timeh5">Start Time:</h5>
+                </div>
+                <p>02:00 PM</p>
+                <div class="time">
+                    <img src="images/end.png">
+                    <h5 class="timeh5">End Time:</h5>
+                </div>
+                <p>05:00 PM</p>
+            </div>
+            <div class="mid">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=Example"> 
+            </div>
+            <div class="end">
+                <h1>Parker Details:</h1>
+                <div class="time">
+                    <img src="images/name.png">
+                    <h5 class="timeh5">Name:</h5>
+                </div>
+                <p>William Jefferson</p>
+                <div class="time">
+                    <img src="images/vehicle.png">
+                    <h5 class="timeh5">Vehicle Type:</h5>
+                </div>
+                <p>Motorcycle</p>
+                <div class="time">
+                    <img src="images/license.png">
+                    <h5 class="timeh5">License Number:</h5>
+                </div>
+                <p>S434JERO4342</p>
+            </div>
+        </div>
+        <br>
+        <button class="btn2" onclick="goBack()">Go Back</button>
+    </main>
+    <footer class="text-center text-lg-start text-white bg-dark">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <img class="imglogo" src="images/logo.png" alt="logo" width="100" style="margin-left: 13px" />
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">PARKsite</h6>
+                        <p>
+                            Eliminating Parking Woes: Simplifying Spots, Easing Stress , One Space at a Time. Join us in a hassle-free journey!
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <a class="links" href="contact.html"><h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6></a>
+                        <a class="links" href="faqmain.html"><h6 class="text-uppercase mb-4 font-weight-bold">FAQ</h6></a>
+                        <a class="links" href="termsAndCondition.html"><h6 class="text-uppercase mb-4 font-weight-bold">Terms & Conditions</h6></a>
+                        <p><i class="fas fa-envelope mr-3"></i> <a href="Bangla/homeBangla.html" style=" color: white;">Language: বাংলা</a></p>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+        </div>
+        <!-- Grid container -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:<a class="text-white" href="index.html">www.parksite.com.bd</a>
+        </div>
+    </footer>
+    <script src="goBack.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
