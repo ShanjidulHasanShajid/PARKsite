@@ -1,0 +1,146 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+.part1{
+    background-image: url('images/back-signupMobile.jpg');
+    background-attachment:scroll;
+    background-size:cover;
+    width: 50vw;
+    padding-top: 8vw;
+    color: black;
+
+}
+
+.part2{
+    padding-top: 8vw;
+    background-color: black;
+    color: white;
+    width: 50vw;
+}
+img{
+    height: 40px;
+}
+.content{
+    margin-top: 70px;
+}
+input {
+  width: 35%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+textarea{
+  width: 35%;
+  padding: 12px 20px;
+  margin-top: 15px;
+  margin-left: 60px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.part2 .glow1{
+  font-weight: normal;
+  font-size: 45px;
+}
+form label{
+  text-align: center;
+}
+
+.submit{
+  
+  margin-top: 20px;
+  width: 85px;
+  height: 40px;
+  border: 2px solid;
+  border-color: #8bc052;
+  border-radius: 30px;
+  
+  
+}
+.submit:hover{
+  background-color: #9ed368;
+}
+
+.glow {
+    font-size: 20px;
+    font-family: sans-serif;
+    color:black;
+    text-align: center;
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+  .glow1{
+    font-size: 20px;
+    font-family: sans-serif;
+    color:white;
+    text-align: center;
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  @media screen and (max-width:1200px){
+    body{
+      flex-direction: column;
+    }
+    .glow{
+      font-size: 17px;
+    }
+    .part1{
+      height: 50vh;
+      width: 100vw;
+      padding-top: 2vw;
+    }
+    .part2{
+      padding-top: 2vw;
+       height: 50vh;
+      width: 100vw;
+    }
+    img{
+      height: 30px;
+    }
+    .content{
+      margin-top: 10px;
+    }
+    .part2 .glow{
+      font-size: 19px;
+    }
+    input{
+      width: 60%;
+      height: 30px;
+      margin-top: 2px;
+      padding: 10px 10px;
+    }
+    textarea{
+      width: 60%;
+      margin-top: 5px;
+      padding: 10px 10px;
+    }
+    .submit{
+      width: 69px;
+      padding: 4px;
+      margin-top: 10px;
+    }
+    label{
+      font-size: 0.8rem;
+    }
+    .content p{
+      font-size: 0.8rem;
+    }
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px limegreen, 0 0 40px limegreen, 0 0 50px limegreen, 0 0 60px limegreen, 0 0 70px limegreen, 0 0 80px limegreen;
+    }
+  }

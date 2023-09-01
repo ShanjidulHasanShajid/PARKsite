@@ -1,0 +1,184 @@
+main {
+    /* background-image: url(images/back-signup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width:99vw;
+    height: 1200px;
+}
+
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    color: black;
+}
+
+.account:link {
+    color: black;
+}
+
+.account:visited {
+    color: black;
+}
+
+.account:hover {
+    color: #8bc052;
+}
+
+.btn1 {
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 15px;
+    width: 90px;
+    height: 40px;
+}
+
+.btn1:hover {
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+}
+
+.btn2 {
+    width: 70px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+
+.btn2:hover {
+    background-color: #8bc052;
+}
+.mother-div{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    display: flex;
+    
+}
+.back{
+    padding:5px;
+    margin-bottom: 30px;
+    background-color: #9ed368;
+    border-radius: 5px;
+    border: 2px solid #9ed368;
+    margin-left: 15px;
+    width: 95px;
+    height: 45px;
+    font-size: 18px;
+}
+.side-bar p{
+    font-size: 25px;
+}
+.garage{
+    border: 3px solid #9dd36845;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.garage:hover{
+    background-color: #9dd36845;
+    transition: 0.5s ease-in-out;
+}
+.garage:focus{
+    background-color: #9dd36845;
+    transition: 0.5s ease-in-out;
+}
+.garage img{
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.garage p{
+    display: flex;
+    align-items: center;
+    margin-left:15px;
+    font-size: 18px;
+}
+.tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+.tag label{
+    font-size: 20px;
+    text-align: center;
+}
+.map{
+    width: 58vw;
+    height: 1025px;
+    margin-left: 15px;
+}
+.confirm{
+    padding:5px;
+    margin-bottom: 30px;
+    background-color: #9ed368;
+    border-radius: 5px;
+    border: 2px solid #9ed368;
+    width: 95px;
+    height: 45px;
+    font-size: 18px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orientation{
+    display: flex;
+    justify-content: center;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+@media (max-width:900px){
+    .mother-div{
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        height: 1600px;
+    }
+    .map iframe{
+        width: 90vw;
+        height: 80vw;
+    }
+    .garage{
+        width: 90vw;
+    }
+    .garage img{
+        width: 150px;
+        height: 100px;
+    }
+}

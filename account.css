@@ -1,0 +1,124 @@
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    color: black;
+}
+
+.account:link {
+    color: black;
+}
+
+.account:visited {
+    color: black;
+}
+
+.account:hover {
+    color: #8bc052;
+}
+
+.btn1 {
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 90px;
+    height: 40px;
+}
+
+.btn1:hover {
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+}
+
+.btn2 {
+    width: 70px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.btn2:hover {
+    background-color: #8bc052;
+}
+body {
+    background-image: url("images/back-signup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 109vh;
+}
+.acard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 27vw;
+    height: 73vh;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.acard p {
+    font-size: 0.9rem;
+}
+
+.acard h4 {
+    font-size: 1.2rem;
+}
+.acard img {
+    width: 12vw;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 350px) and (max-width: 900px) {
+    main {
+        margin-top: 100px;
+    }
+    .acard {
+        width: 80vw;
+        height: 92vh;
+    }
+    .acard img {
+        width: 60vw;
+        margin-bottom: 5px;
+    }
+}

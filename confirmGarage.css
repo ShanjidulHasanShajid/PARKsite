@@ -1,0 +1,183 @@
+main {
+    width: 100vw;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9dd36870;
+}
+
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    color: black;
+}
+
+.account:link {
+    color: black;
+}
+
+.account:visited {
+    color: black;
+}
+
+.account:hover {
+    color: #8bc052;
+}
+
+.btn1 {
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 15px;
+    width: 90px;
+    height: 40px;
+}
+
+.btn1:hover {
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+}
+
+.btn2 {
+    width: 70px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+
+.btn2:hover {
+    background-color: #8bc052;
+}
+.acard {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    width: 27vw;
+    height: 80vh;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
+.acard img {
+    width: 25vw;
+    border-radius: 15px;
+}
+.acard h2 {
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+.acard p {
+    font-size: 18px;
+}
+.orientation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booba h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.booba button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #8bc052;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.booba img {
+    width: 40px;
+    margin-top: -50px;
+    border-radius: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_img {
+    width: 40px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .acard {
+        width: 80vw;
+        height: 75vh;
+    }
+    .acard img {
+        width: 600px;
+    }
+}
+@media (max-width: 600px) {
+    .acard {
+        width: 80vw;
+        height: 550px;
+        margin: 0px;
+    }
+    .acard img {
+        width: 245px;
+    }
+    main {
+        height: 800px;
+    }
+}
+
+@media (min-width: 1900px) and (max-width: 1940px) and (min-height: 900px) and (max-height: 1090px) {
+    .acard {
+        height: 70vh;
+    }
+}
