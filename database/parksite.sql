@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 01, 2023 at 06:46 PM
+-- Generation Time: Sep 01, 2023 at 09:51 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -61,7 +61,8 @@ CREATE TABLE `booking` (
 
 INSERT INTO `booking` (`bookingid`, `bStartTime`, `bEndTime`, `bDate`, `booktype`) VALUES
 (1, 'ased', 'ad', 'ad', 'ad'),
-(4, '18:20', '22:20', '2023-09-12', 'Motorcycle');
+(4, '18:20', '22:20', '2023-09-12', 'Motorcycle'),
+(5, '14:51', '16:55', '2023-09-02', 'Motorcycle');
 
 -- --------------------------------------------------------
 
@@ -93,7 +94,16 @@ INSERT INTO `client` (`clientid`, `name`, `email`, `pass`, `nid`, `phone`, `ctyp
 (4, 'William Jefferson', 'wjefferson@gmail.com', 'wjefferson123', 'AK04924M92', '01739287290', 'Vehicle Owner', 1, NULL, NULL),
 (5, 'Ayatullah Arefin', 'ayatarefin@gmail.com', 'ayatullah490', 'AK04709N34', '01846729639', 'Vehicle Owner', 2, NULL, NULL),
 (6, 'Tamim Fatema', 'tfatemma@gmail.com', 'tamiiim134', 'AK04424R92', '01673829402', 'Supervisor', NULL, NULL, 1),
-(7, 'Aktar Ali', 'ali@gmail.com', 'ali', '1234567834', '01111111111', 'Vehicle Owner', 3, NULL, NULL);
+(7, 'Aktar Ali', 'ali@gmail.com', 'ali', '1234567834', '01111111111', 'Vehicle Owner', 3, NULL, NULL),
+(8, 'Muktar Ali', 'ali@gmail.com', 'doldolmondol', '1234567891', '01111111111', 'Garage Owner', NULL, 4, NULL),
+(9, 'Kala Jahangir', 'kalagolarmala@gmail.com', 'wfwfwf', '1234567834', '01111111111', 'Supervisor', NULL, NULL, 2),
+(10, 'Sadio Mane', 'mane@gmail.com', 'werfgerfg', '1234567891', '01111111111', 'Garage Owner', NULL, 5, NULL),
+(11, 'Mo Salah', 'salahgolarmala@gmail.com', 'doldolmondol', '1234567891', '01111111111', 'Vehicle Owner', 4, NULL, NULL),
+(12, 'Joshna Halder', 'bdrmyjsna@gmail.com', 'doldolmondol', '1234567891', '01111111111', 'Supervisor', NULL, NULL, 3),
+(13, 'Anannya Preeta', 'preeta@gmail.com', 'anannyapreeta', 'AJ099234H89', '01937088321', 'Garage Owner', NULL, 6, NULL),
+(14, 'William Jefferson', 'wjefferson@gmail.com', 'wjefferson123', 'AK04924M92', '01739287290', 'Vehicle Owner', 5, NULL, NULL),
+(15, 'Tamim Fatema', 'tfatemma@gmail.com', 'tamiiim134', 'AK04424R92', '01673829402', 'Supervisor', NULL, NULL, 4),
+(16, 'Fardin Ahsan Shafi', 'fardin467@gmail.com', 'password', '1234567890', '1234567890', 'Supervisor', NULL, NULL, 5);
 
 -- --------------------------------------------------------
 
@@ -165,9 +175,12 @@ INSERT INTO `garage` (`garageid`, `garsize`, `garcap`, `garadr`, `aStartTime`, `
 (2, '700', '7', 'House number 5, Road number 3, Taltola, Khilgaon, Dhaka ', '01:14', '02:14', '2023-09-08', NULL, NULL, NULL),
 (3, '122', '1', 'House number 3, Road number 7/A, Dhupkhola, Gendaria, Dhaka', '11:17', '11:16', '2023-09-26', NULL, NULL, NULL),
 (4, '200', '2', 'House number 4, Road number 8/V, Paltan, Dhaka', '01:55', '23:58', '2023-09-20', NULL, NULL, NULL),
-(5, '400', '2', 'House 3, Road 6, Jahanginagar', '00:47', '23:50', '2023-09-27', NULL, NULL, NULL),
+(5, '400', '2', 'House 3, Road 6, Jahanginagar', '13:00', '18:00', '2023-09-02', NULL, NULL, NULL),
 (6, '500', '5', 'House 6, Area 7', '01:00', '02:57', '2023-09-05', NULL, NULL, NULL),
-(7, '800', '8', 'House 8, Nigarnagar', '22:28', '00:28', '2023-09-22', NULL, NULL, NULL);
+(7, '800', '8', 'House 8, Nigarnagar', '22:28', '00:28', '2023-09-22', NULL, NULL, NULL),
+(8, '200', '2', 'a road, Dhaka, Bangladesh', NULL, NULL, NULL, NULL, NULL, NULL),
+(9, '200', '2', 'a road, Dhaka, Bangladesh', NULL, NULL, NULL, NULL, NULL, NULL),
+(10, 'Uttara', '876 sqkm', 'House number 22, Road number 4/A, Block C, Sector 15, Uttara, Dhaka Bangladesh ', NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -188,7 +201,10 @@ CREATE TABLE `go` (
 INSERT INTO `go` (`goid`, `supnid`, `garageid`) VALUES
 (1, 'BT098492H67', 1),
 (2, 'BH045622H69', 2),
-(3, 'BJ42069H54', 3);
+(3, 'BJ42069H54', 3),
+(4, '1234567891', 8),
+(5, '1234567891', 9),
+(6, 'BT098492H67', 10);
 
 -- --------------------------------------------------------
 
@@ -261,11 +277,12 @@ INSERT INTO `registration` (`regid`, `status`, `regdate`, `name`, `email`, `pass
 (6, 1, '2023-08-31', 'Ayatullah Arefin', 'ayatarefin@gmail.com', 'ayatullah490', 'AK04709N34', '01846729639', 'Motorcycle', 'Honda SP160', 'AH891J45MX', '234 678 123', '', '', '', '', 'Vehicle Owner', 1),
 (7, 1, '2023-08-31', 'Tamim Fatema', 'tfatemma@gmail.com', 'tamiiim134', 'AK04424R92', '01673829402', '', '', '', '', '', '', '', '', 'Supervisor', 1),
 (8, 1, '2023-09-01', 'Aktar Ali', 'ali@gmail.com', 'ali', '1234567834', '01111111111', 'Car', 'Pajero', '1234567890', '1234567890', '', '', '', '', 'Vehicle Owner', 1),
-(9, 0, '2023-09-01', 'Muktar Ali', 'ali@gmail.com', 'doldolmondol', '1234567891', '01111111111', '', '', '', '', '200', '2', 'a road, Dhaka, Bangladesh', '1234567891', 'Garage Owner', 1),
-(10, 0, '2023-09-01', 'Kala Jahangir', 'kalagolarmala@gmail.com', 'wfwfwf', '1234567834', '01111111111', '', '', '', '', '', '', '', '', 'Supervisor', 1),
-(11, 0, '2023-09-01', 'Sadio Mane', 'mane@gmail.com', 'werfgerfg', '1234567891', '01111111111', '', '', '', '', '200', '2', 'a road, Dhaka, Bangladesh', '1234567891', 'Garage Owner', 1),
-(12, 0, '2023-09-01', 'Mo Salah', 'salahgolarmala@gmail.com', 'doldolmondol', '1234567891', '01111111111', 'Car', 'Pajero', '1234567890', '1234567890', '', '', '', '', 'Vehicle Owner', 1),
-(13, 0, '2023-09-01', 'Joshna Halder', 'bdrmyjsna@gmail.com', 'doldolmondol', '1234567891', '01111111111', '', '', '', '', '', '', '', '', 'Supervisor', 1);
+(9, 1, '2023-09-01', 'Muktar Ali', 'ali@gmail.com', 'doldolmondol', '1234567891', '01111111111', '', '', '', '', '200', '2', 'a road, Dhaka, Bangladesh', '1234567891', 'Garage Owner', 1),
+(10, 1, '2023-09-01', 'Kala Jahangir', 'kalagolarmala@gmail.com', 'wfwfwf', '1234567834', '01111111111', '', '', '', '', '', '', '', '', 'Supervisor', 1),
+(11, 1, '2023-09-01', 'Sadio Mane', 'mane@gmail.com', 'werfgerfg', '1234567891', '01111111111', '', '', '', '', '200', '2', 'a road, Dhaka, Bangladesh', '1234567891', 'Garage Owner', 1),
+(12, 1, '2023-09-01', 'Mo Salah', 'salahgolarmala@gmail.com', 'doldolmondol', '1234567891', '01111111111', 'Car', 'Pajero', '1234567890', '1234567890', '', '', '', '', 'Vehicle Owner', 1),
+(13, 1, '2023-09-01', 'Joshna Halder', 'bdrmyjsna@gmail.com', 'doldolmondol', '1234567891', '01111111111', '', '', '', '', '', '', '', '', 'Supervisor', 1),
+(14, 1, '2023-09-01', 'Fardin Ahsan Shafi', 'fardin467@gmail.com', 'password', '1234567890', '1234567890', '', '', '', '', '', '', '', '', 'Supervisor', 1);
 
 -- --------------------------------------------------------
 
@@ -283,7 +300,11 @@ CREATE TABLE `super` (
 --
 
 INSERT INTO `super` (`sid`, `workhrs`) VALUES
-(1, '2');
+(1, '2'),
+(2, '2'),
+(3, '2'),
+(4, '2'),
+(5, '2');
 
 -- --------------------------------------------------------
 
@@ -305,7 +326,9 @@ CREATE TABLE `vehicle` (
 INSERT INTO `vehicle` (`vehicleid`, `vehicleType`, `vehicleModel`, `vehicleReg`) VALUES
 (1, 'Car', 'Toyota Corolla X', 'AH098V87MM'),
 (2, 'Motorcycle', 'Honda SP160', 'AH891J45MX'),
-(3, 'Car', 'Pajero', '1234567890');
+(3, 'Car', 'Pajero', '1234567890'),
+(4, 'Car', 'Pajero', '1234567890'),
+(5, 'Car', 'Toyota Corolla X', 'AH098V87MM');
 
 -- --------------------------------------------------------
 
@@ -326,7 +349,9 @@ CREATE TABLE `vo` (
 INSERT INTO `vo` (`void`, `licenseNo`, `vehicleid`) VALUES
 (1, '123 456 789', 1),
 (2, '234 678 123', 2),
-(3, '1234567890', 3);
+(3, '1234567890', 3),
+(4, '1234567890', 4),
+(5, '123 456 789', 5);
 
 --
 -- Indexes for dumped tables
@@ -406,49 +431,49 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `bookingid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `bookingid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `client`
 --
 ALTER TABLE `client`
-  MODIFY `clientid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `clientid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `garage`
 --
 ALTER TABLE `garage`
-  MODIFY `garageid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `garageid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `go`
 --
 ALTER TABLE `go`
-  MODIFY `goid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `goid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
-  MODIFY `regid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `regid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `super`
 --
 ALTER TABLE `super`
-  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `vehicle`
 --
 ALTER TABLE `vehicle`
-  MODIFY `vehicleid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `vehicleid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `vo`
 --
 ALTER TABLE `vo`
-  MODIFY `void` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `void` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
