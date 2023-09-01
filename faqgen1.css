@@ -1,0 +1,164 @@
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+}
+
+.account{
+    color: black;
+}
+
+.account:link{
+    color: black;
+}
+
+.account:visited{
+    color: black;
+}
+
+.account:hover{
+    color: #8bc052;
+}
+
+.btn1{
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 90px;
+    height: 40px;
+    
+}
+
+.btn1:hover{
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+
+}
+
+.btn2{
+    width: 70px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 10px;
+    
+}
+
+.btn2:hover{
+    background-color: #8bc052;
+}
+
+main {
+    margin-top: 100px;
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/back-signup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.instructions{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.video{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.instructions h5{
+    width: max-content;
+    background-color: #9ed368;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.instructions p{
+    font-size: 1.2rem;
+}
+
+.video video{
+    background-color: aqua;
+    width: 35vw;
+    height: 35vh;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px){
+    .video video{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 850px){
+    main{
+        background-image: url(images/back-signupMobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .video video{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    main{
+        height: 140vh;
+    }
+
+    .instructions{
+        width: 90vw;
+    }
+
+    .video{
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .video video{
+        width: 100%;
+        height: 20vh;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img class="imglogo" src="images/logo.png" alt="" width="60"
+                        class="d-inline-block align-text-top" />
+                    PARKsite</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbtn navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- <li class="nav-item">
+                            <a href="https://9anime.gs/home" target="_blank" class="nav-link account">Account</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="signup.html"><button class="btn1">Sign Up</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html"><button class="btn2">Login</button></a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div id="banner" style="width: 99vw;
+        height: 49.5vw;">
+            <div class="banner">
+                <p>lorem</p>
+                <div class="bannerCard">
+                    <div class="tabs">
+
+                        <button onclick="viewParking();changeBackgroundImage1()">Seek Parking</button>
+                        <button onclick="viewGarage() ;changeBackgroundImage2()">Offer Garage</button>
+                        <button onclick="viewSuper() ; changeBackgroundImage3()">Supervise</button>
+                    </div>
+
+                    <div class="tabContent"
+                        id="homeCard">
+                        <div class="tab1div">
+                            <h2>Looking for a parking spot?</h2>
+                            <input
+                                type="text" placeholder="Enter Current Location">
+                            <br>
+                            <input
+                                type="text" placeholder="Enter Desired Location">
+                            <br>
+                            <a href="signup.html"><button
+                                class="tab1button1"
+                                >Search</button></a>
+                            <a href="signup.html"><button
+                                class="tab1button2">Sign Up</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="work">
+            <div class="workAt">
+                <p>Want to Work at PARKsite?</p>
+                <div class="workAt1">
+                    <p>Get in touch!</p>
+                   <a href="contact.html"> <button>PARKsite Career</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about1">
+            <h1>We understand your needs</h1>
+            <div class="about">
+
+                <div class="left">
+                    <img src="images/hassle.jpg" alt="">
+                    <br>
+                    <h3>Reduce Parking Hassle!</h3>
+                    <p>Tired of endless parking searches? Our platform transforms the parking experience. Easily locate and book spaces, saving time and frustration. Simplify urban mobility with stress-free parking through our innovative solution.</p>
+                </div>
+                <div class="right">
+                    <img src="images/theft.jpg" alt="">
+                    <br>
+                    <h3>Dont Stress About Safety!</h3>
+                    <p>Safety is our top concern. We partner with trusted garage hosts and employ dedicated supervisors to oversee vehicle security. With secure parking spaces, you can have peace of mind, knowing your vehicle is in good hands. Your safety is our priority.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center text-lg-start text-white bg-dark">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <img class="imglogo" src="images/logo.png" alt="logo" width="100" style="margin-left: 13px" />
+                        <br />
+                        <h2 style="margin-right: auto">PARKsite</h2>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">PARKsite</h6>
+                        <p>
+                            Eliminating Parking Woes: Simplifying Spots, Easing Stress , One Space at a Time. Join us in a hassle-free journey!
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <a class="links" href="contact.html"><h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6></a>
+                        <a class="links" href="faqmain.html"><h6 class="text-uppercase mb-4 font-weight-bold">FAQ</h6></a>
+                        <a class="links" href="termsAndCondition.html"><h6 class="text-uppercase mb-4 font-weight-bold">Terms & Conditions</h6></a>
+                        <p><i class="fas fa-envelope mr-3"></i> <a href="Bangla/homeBangla.html" style=" color: white;">Language: বাংলা</a></p>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+        </div>
+        <!-- Grid container -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:<a class="text-white" href="index.html">www.parksite.com.bd</a>
+        </div>
+    </footer>
+    <script src="home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

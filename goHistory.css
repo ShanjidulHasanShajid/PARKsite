@@ -1,0 +1,306 @@
+/*..................header & footer..................*/
+
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    color: black;
+}
+
+.account:link {
+    color: black;
+}
+
+.account:visited {
+    color: black;
+}
+
+.account:hover {
+    color: #8bc052;
+}
+
+.btn1 {
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+.btn1:hover {
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+}
+
+.btn2 {
+    width: 120px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.btn2:hover {
+    background-color: #9ed368;
+}
+/*..................header & footer..................*/
+
+/*..................dropdown button..................*/
+
+.myBtn {
+    background-color: #9ed368;
+    border-radius: 5px;
+    border: 2px solid #9ed368;
+    width: 220px;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.myBtn:hover {
+    background-color: #8bc052;
+}
+.myBtn:focus {
+    background-color: #8bc052;
+}
+
+/*..................dropdown button..................*/
+
+.mother-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+.side-bar-options {
+    width: 18vw;
+    height: 15vh;
+    background-color: #9ed368;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-bar-options img {
+    width: 60px;
+}
+
+.side-bar-options:hover {
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+}
+.side-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 25vw;
+    border-right: 3px solid #8bc052;
+}
+.window {
+    width: 75vw;
+    border-left: 3px solid #8bc052;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.window p {
+    margin-top: 10px;
+    font-size: 50px;
+}
+/* .............................................. */
+.outer-wrapper {
+    padding: 30px;
+    border-radius: 5px;
+    width: 70vw;
+    height: 600px;
+}
+.table-wrapper {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: fit-content;
+    max-height: 500px;
+    margin-top: 22px;
+    margin: 15px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    border-spacing: 0px;
+}
+
+table th {
+    position: sticky;
+    top: 0px;
+    width: 60vw;
+    background-color: #9ed368;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+table th,
+table td {
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+table tr:nth-child(2n + 0) {
+    background-color: rgb(250, 250, 231);
+}
+table tr:nth-child(2n + 1) {
+    background-color: rgb(255, 255, 255);
+}
+
+tr {
+    height: 62px;
+}
+table td {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar for Webkit browsers (like Chrome and Safari) */
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #8bc052; /* Set the color of the scrollbar thumb */
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background-color: #ddd; /* Set the color of the scrollbar track */
+}
+/* ..................................................... */
+
+@media (min-width: 352px) and (max-width: 650px) {
+    main {
+        background-image: url(images/back-signupMobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .mother-div {
+        flex-direction: column;
+        justify-content: center;
+        height: 1200px;
+        margin-top: 70px;
+    }
+    .side-bar-options {
+        width: 75vw;
+        height: 12vh;
+        background-color: #9ed368;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .side-bar-options img {
+        width: 30px;
+    }
+
+    .side-bar {
+        width: 100vw;
+        border-right: 0px solid #8bc052;
+        margin-top: 60px;
+    }
+    .window {
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border-left: 0px solid #8bc052;
+        margin-top: 50px;
+    }
+    .window p {
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .outer-wrapper {
+        padding: 30px;
+        border-radius: 5px;
+        width: 100vw;
+        height: 600px;
+    }
+    table th {
+        font-size: 1.1rem;
+    }
+    table td {
+        font-size: 1rem;
+    }
+    tr {
+        height: 42px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1200px) {
+    .side-bar-options {
+        margin-bottom: 30px;
+        background-color: #9ed368;
+        border-radius: 5px;
+        border: 2px solid #9ed368;
+        margin-left: 10px;
+        width: 25vw;
+        height: 15vh;
+        font-size: 1rem;
+    }
+    .mother-div {
+        height: 700px;
+    }
+    .side-bar {
+        width: 30vw;
+    }
+    .window {
+        width: 70vw;
+    }
+    .window p {
+        font-size: 30px;
+    }
+}
